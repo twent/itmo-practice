@@ -1,12 +1,18 @@
 <input type="text" name="" id="inp">
-<button id="bt" onclick="fetchUrl()">Fetch URL</button>
+<button id="bt">Fetch URL</button>
 
 <script>
+    
+    let bt = document.querySelector('#bt')
     let inp = document.querySelector('#inp');
+
+    bt.addEventListener('click', fetchUrl);
+
     async function fetchUrl(url) {
         url = inp.value;
         let response = await fetch(url);
         let responseText = await response.text();
         inp.value = responseText;
     }
+
 </script>
