@@ -6,11 +6,7 @@
     async function fetchUrl(url) {
         url = inp.value;
         let response = await fetch(url);
-        if (response.ok) {
-            let responseText = await response.text();
-        } else {
-            alert("Ошибка HTTP: " + response.status);
-        }
+        let responseText = await response.text();
         inp.value = responseText;
     }
 </script>
