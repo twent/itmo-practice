@@ -1,3 +1,3 @@
 function task(x) {
-    return (this.value ** 2) * x;
+    return (x.value * x.value) * x;
 }
