@@ -1,3 +1,4 @@
 function task(x) {
-    return x*(x ** 2);
+    this.value = x;
+    console.log(x*(this.value ** 2));
 }
