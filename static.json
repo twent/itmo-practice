@@ -1,15 +1,23 @@
 {
-    "headers": {
-      "/": {
-        "X-Author": "twent",
-        "Access-Control-Allow-Origin": "*"
-      },
-      "/login/": {
-        "Content-Type": "text/plain; charset=UTF-8",
-        "Access-Control-Allow-Origin": "*"
-      },
-      "/sample/": {
-        "Content-Type": "text/plain; charset=UTF-8"
-      }
+  "https_only": true,
+  "headers": {
+    "/**": {
+      "X-Author": "twent",
+      "Access-Control-Allow-Origin": "*"
+    },
+    "/login/": {
+      "Content-Type": "text/plain; charset=UTF-8",
+      "Access-Control-Allow-Origin": "*"
+    },
+    "/sample/": {
+      "Content-Type": "text/plain; charset=UTF-8"
     }
+  },
+
+  "routes": {
+    "/": "index.html",
+    "/login/": "login.html",
+    "/sample/": "sample.js"
   }
+
+}
