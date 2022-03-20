@@ -1,4 +1,3 @@
-async function task(x) { 
-    const checkAge = age => new Promise((res, rej) => age < 18 ? rej('no') : res('yes'));
-    return checkAge(x);
+const task = x => {
+    return new Promise((res, rej) => x < 18 ? rej('no') : res('yes'));
 }
